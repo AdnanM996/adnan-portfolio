@@ -1,0 +1,38 @@
+.footer {
+    background-color: $color-secondary;
+    color: $color-primary;
+    padding: $padding-medium;
+
+    & .wrapper {
+        @include center-down;
+
+        @media only screen and(min-width: $medium-device){
+            @include space-between;
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+
+            @media only screen and(min-width: $medium-device){
+                margin-bottom: 0rem;
+            }
+        }
+
+        & a {
+            color: $color-primary;
+            display: inline-block;
+            font-size: 1.8rem;
+
+            @media only screen and(min-width: $large-device) {
+                font-size: 2.2rem;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.8rem;
+            }
+        }
+    }
+}

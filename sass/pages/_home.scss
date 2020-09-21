@@ -1,0 +1,61 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+
+    & .wrapper {
+        height: 100%;
+        @include start-center;
+    }
+}
+
+.about {
+    padding: $padding-large;
+
+    & .wrapper {
+        @include start-col;
+    }
+
+    & .education {
+        margin-top: 7.5rem;
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+.work {
+    padding: $padding-large;
+
+    & .wrapper {
+        @include start-col;
+    }
+}
+
+.skills {
+    padding: $padding-large;
+
+    & .wrapper {
+        @include start-col;
+    }
+}
+
+.social {
+    background-color: $color-secondary;
+    color: $color-primary;
+    padding: $padding-large;
+
+    & .wrapper {
+        @include center-down;
+    }
+}
+
+.contact {
+    padding: $padding-large;
+
+    & .wrapper {
+        @include start-col;
+    }
+}

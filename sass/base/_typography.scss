@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-secondary;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    font-family: $font-secondary;
+    align-self: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .67em;
+}
+
+.logo {
+    color: $color-secondary;
+    display: block;
+    font-family: $font-primary;
+    font-size: 5.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &--white {
+        color: $color-primary;
+    }
+}
+
+.hero {
+    &--heading {
+        color: $color-secondary;
+        font-family: $font-secondary;
+        font-size: 7.2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        line-height: 1.4;
+        
+        @media only screen and(min-width: $medium-device) {
+            font-size: 7.2rem;
+        }
+
+        @media only screen and(min-width: $large-device) {
+            font-size: 10rem;
+        }
+
+        @media only screen and(min-width: $extra-large-device) {
+            font-size: 12.4rem;
+        }
+        
+    }
+
+    &--p {
+        color: $color-tertiary;
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-top: 7.5rem;
+    }
+}
+
+.about {
+    &--text {
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+    & h1 {
+        margin-bottom: 10rem;
+    }
+
+    & p {
+        color: $color-tertiary;
+    }
+}
+
+.social {
+    &--heading {
+        color:$color-primary;
+    }
+}
+
+//Icons
+
+.fa-arrow-right,
+.fa-download {
+    margin-left: 1.6rem;
+}
+
+.fa-arrow-right {
+    transition: all .3s ease;
+}
+
+.fa-instagram,
+.fa-linkedin-in,
+.fa-facebook-f,
+.fa-behance,
+.fa-twitter,
+.fa-github {
+    color: $color-primary;
+    transition: all .5s ease;
+}
+
+.fa-instagram:hover {
+    color: #c32aa3;
+}
+
+.fa-linkedin-in:hover {
+    color: #007bb5;
+}
+
+.fa-facebook-f:hover {
+    color: #1877f2;
+}
+
+.fa-behance:hover {
+    color: #131418;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-github:hover {
+    color: #000000;
+}
+
+.contact {
+    &--heading {
+        font-size: 3.6rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-self: flex-start;
+    }
+}
+
+.email {
+    color: $color-secondary;
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 10rem;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.6;
+    transition: all .3s ease;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        height: 2px;
+        width: 100%;
+        background-color: $color-secondary;
+        transition: all .3s ease;
+    }
+
+    &::after {
+        left: 0%;
+    }
+
+    &::before {
+        left: -100%;
+    }
+
+    &:hover {
+        &::after {
+            left: 100%;
+        }
+
+        &::before {
+            left: 0%;
+            transition-delay: .3s;
+        }
+    }
+}
+

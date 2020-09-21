@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: 100%;
+    padding: $padding-medium;
+
+    & .wrapper {
+        @include space-between-center;
+    }
+
+    & .menu {
+        width: 5rem;
+        position: relative;
+        z-index: 7;
+
+        @media only screen and(min-width: $large-device) {
+            display: none;
+        }
+
+        &__line {
+            height: .35rem;
+            width: 100%;
+            background-color: $color-secondary;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    & .logo {
+        position: relative;
+        z-index: 7;
+    }
+
+}

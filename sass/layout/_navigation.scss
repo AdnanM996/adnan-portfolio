@@ -1,0 +1,68 @@
+.nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    background-color: $color-secondary;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    @include center-center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &--open {
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    @media only screen and(min-width: $large-device) {
+        position: relative;
+        width: auto;
+        background-color: transparent;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & ul {
+        list-style: none;
+
+        @media only screen and(min-width: $large-device) {
+            display: flex;
+        }
+        
+    }
+
+    & li {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+
+            @media only screen and(min-width: $large-device) {
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    & a {
+        color: $color-primary;
+        display: block;
+        font-size: 3.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: capitalize;
+
+        @media only screen and(min-width: $large-device) {
+            color: $color-tertiary;
+            font-size: 1.6rem;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
