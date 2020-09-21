@@ -56,8 +56,8 @@
         text-transform: capitalize;
 
         @media only screen and(min-width: $large-device) {
-            color: $color-tertiary;
-            font-size: 1.6rem;
+            color: #aaa;
+            font-size: 1.8rem;
             transition: all .3s ease;
 
             &:hover {

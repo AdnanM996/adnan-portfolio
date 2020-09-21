@@ -57,6 +57,11 @@
     width: 100%;
     transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
+    &:hover {
+        box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.4);
+        transform: translateY(-.7rem);
+    }
+
     @media only screen and(min-width: $medium-device) {
         width: 35rem;
         padding: 1.6rem 3.2rem;

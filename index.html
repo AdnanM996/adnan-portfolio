@@ -38,7 +38,7 @@
             <div class="hero__text">
                 <h1 class="hero--heading">bring your vision</h1>
                 <h1 class="hero--heading">to reality</h1>
-                <p class="hero--p">frontend developer</p>
+                <p class="hero--p">adnan musinovic &dash; frontend developer</p>
             </div>
         </div>
     </section>
@@ -206,16 +206,35 @@
             <div class="grid">
                 <div class="grid__item">
                     <h2 class="contact--heading">for any questions <br> or just to say hello</h2>
-
-                    <a href="mailto:adnanmusinovic98@gmail.com" class="email">adnan@gmail.com</a>
                 </div>
                 
                 <div class="grid__item">
                     <form action="action.php" class="form" method="POST">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <input type="subject" name="subject" id="subject" placeholder="subject">
-                        <textarea name="message" placeholder="message"></textarea>
+
+                        <div class="input">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                            <div class="border"></div>
+                        </div>
+
+                        <div class="input">
+                            <input type="email" name="email" id="email">
+                            <label for="email">Email</label>
+                            <div class="border"></div>
+                        </div>
+
+                        <div class="input">
+                            <input type="subject" name="subject" id="subject">
+                            <label for="subject">Subject</label>
+                            <div class="border"></div>
+                        </div>
+                        
+                        <div class="input">
+                            <textarea name="message" id="textarea"></textarea>
+                            <label for="message">Message</label>
+                            <div class="border"></div>
+                        </div>
+
                         <button type="submit" class="btn" id="btn">send message <i class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>

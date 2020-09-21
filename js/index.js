@@ -5,6 +5,18 @@ let menuLineTop = document.querySelector('.menu__line--top');
 let menuLineBottom = document.querySelector('.menu__line--bottom');
 let navigationLinks = document.querySelectorAll('nav ul li a');
 let logo = document.querySelector('.logo');
+let heroText = document.querySelector('.hero__text');
+console.log(heroText);
+
+window.addEventListener('scroll', ()=> {
+    let windowScroll = (-this.pageYOffset / 5) + 'px';
+
+    console.log(windowScroll);
+
+    heroText.style.transform = `translateY(${windowScroll})`;
+
+
+})
 
 menu.addEventListener('click', ()=> {
     nav.classList.toggle('nav--open');

@@ -16,7 +16,7 @@ body {
   background-color: #fff; }
 
 ::selection {
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   color: #fff; }
 
 .loader {
@@ -28,12 +28,12 @@ body {
   z-index: 999;
   height: 100%;
   width: 100%;
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   display: flex;
   justify-content: center;
   align-items: center; }
   .loader__inner {
-    border: 1.6rem solid #757575;
+    border: 1.6rem solid #666666;
     border-radius: 50%;
     border-top: 1.6rem solid #fff;
     width: 16rem;
@@ -65,7 +65,7 @@ body {
   font-size: 1.8rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #0c0c0c;
+  color: #1b1b1b;
   font-weight: 300;
   text-transform: capitalize;
   line-height: 1.6;
@@ -74,10 +74,10 @@ h1, h2, h3, h4, h5, h6 {
   align-self: center; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 3.6rem; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 3.2rem; }
 
 h3 {
   font-size: 1.17em; }
@@ -92,7 +92,7 @@ h6 {
   font-size: .67em; }
 
 .logo {
-  color: #0c0c0c;
+  color: #1b1b1b;
   display: block;
   font-family: "Rubik", sans-serif;
   font-size: 5.6rem;
@@ -103,12 +103,13 @@ h6 {
     color: #fff; }
 
 .hero--heading {
-  color: #0c0c0c;
+  color: #1b1b1b;
   font-family: "Cabin", sans-serif;
   font-size: 7.2rem;
   font-weight: 300;
   text-transform: capitalize;
-  line-height: 1.4; }
+  line-height: 1.4;
+  text-shadow: 5px 5px #ededed; }
   @media only screen and (min-width: 768px) {
     .hero--heading {
       font-size: 7.2rem; } }
@@ -120,7 +121,7 @@ h6 {
       font-size: 12.4rem; } }
 
 .hero--p {
-  color: #757575;
+  color: #666666;
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -135,7 +136,7 @@ h6 {
   margin-bottom: 10rem; }
 
 .about p {
-  color: #757575; }
+  color: #666666; }
 
 .social--heading {
   color: #fff; }
@@ -181,7 +182,7 @@ h6 {
   align-self: flex-start; }
 
 .email {
-  color: #0c0c0c;
+  color: #1b1b1b;
   display: inline-block;
   font-size: 2.4rem;
   font-weight: 500;
@@ -197,7 +198,7 @@ h6 {
     bottom: 0%;
     height: 2px;
     width: 100%;
-    background-color: #0c0c0c;
+    background-color: #1b1b1b;
     transition: all .3s ease; }
   .email::after {
     left: 0%; }
@@ -211,8 +212,8 @@ h6 {
 
 .cta {
   background-color: #fff;
-  border: 1px solid #0c0c0c;
-  color: #0c0c0c;
+  border: 1px solid #1b1b1b;
+  color: #1b1b1b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +240,7 @@ h6 {
     bottom: 0%;
     height: 100%;
     width: 100%;
-    background-color: #0c0c0c;
+    background-color: #1b1b1b;
     transform: translateY(100%);
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: -1; }
@@ -249,7 +250,7 @@ h6 {
       transform: translateY(0%); }
 
 .btn {
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   color: #fff;
   border: 0;
   font-size: 1.6rem;
@@ -259,6 +260,9 @@ h6 {
   text-transform: uppercase;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .btn:hover {
+    box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.7rem); }
   @media only screen and (min-width: 768px) {
     .btn {
       width: 35rem;
@@ -290,7 +294,7 @@ h6 {
     .header .menu__line {
       height: .35rem;
       width: 100%;
-      background-color: #0c0c0c; }
+      background-color: #1b1b1b; }
       .header .menu__line:not(:last-child) {
         margin-bottom: 1rem; }
   .header .logo {
@@ -302,7 +306,7 @@ h6 {
   top: 0%;
   left: 0%;
   z-index: 5;
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   height: 100%;
   width: 100%;
   display: flex;
@@ -343,11 +347,11 @@ h6 {
     text-transform: capitalize; }
     @media only screen and (min-width: 992px) {
       .nav a {
-        color: #757575;
-        font-size: 1.6rem;
+        color: #aaa;
+        font-size: 1.8rem;
         transition: all .3s ease; }
         .nav a:hover {
-          color: #0c0c0c; } }
+          color: #1b1b1b; } }
 
 .grid {
   display: grid;
@@ -381,7 +385,7 @@ h6 {
         left: 0%;
         height: 100%;
         width: 100%;
-        background-color: #0c0c0c;
+        background-color: #1b1b1b;
         z-index: 3; }
     .work .grid__item:hover a {
       filter: grayscale(0%); }
@@ -463,40 +467,71 @@ input[type="email"],
 input[type="subject"] {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #757575;
-  color: #0c0c0c;
+  border-bottom: 2px solid #aaa;
+  display: inline-block;
+  color: #1b1b1b;
   padding: 1.6rem 3.2rem;
   margin-bottom: 4rem;
   outline-width: 0;
   transition: all .3s ease;
-  width: 100%; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="subject"]:focus {
-    border-bottom: 2px solid #000;
-    background-color: #fff; }
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
 
-textarea {
+#textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #757575;
-  color: #0c0c0c;
+  border-bottom: 2px solid #aaa;
+  color: #1b1b1b;
+  display: inline-block;
   font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   height: 15rem;
   padding: 1.6rem 3.2rem;
-  margin-bottom: 4rem;
   outline-width: 0;
   transition: all .3s ease;
   width: 100%; }
 
-::placeholder {
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  font-family: "Cabin", sans-serif; }
+.input {
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden; }
+  .input label {
+    position: absolute;
+    left: 32px;
+    bottom: 16px;
+    transition: all .3s ease;
+    font-size: 1.4rem;
+    color: #666666; }
+  .input .border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1b1b1b;
+    transform: translateX(-100%);
+    transition: all .3s ease; }
+  .input #textarea ~ label {
+    bottom: 125px; }
+  .input #textarea ~ .border {
+    bottom: 5px; }
+  .input #textarea:focus ~ label {
+    bottom: 175px; }
+  .input input,
+  .input textarea {
+    margin-bottom: 0; }
+    .input input:focus ~ .border,
+    .input textarea:focus ~ .border {
+      transform: translateX(0); }
+    .input input:focus ~ label,
+    .input textarea:focus ~ label {
+      bottom: 50px;
+      opacity: 0; }
 
 .footer {
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   color: #fff;
   padding: 5rem 0rem; }
   .footer .wrapper {
@@ -557,7 +592,7 @@ textarea {
     flex-direction: column; }
 
 .social {
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
   color: #fff;
   padding: 10rem 0rem; }
   .social .wrapper {
