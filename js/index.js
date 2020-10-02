@@ -21,6 +21,8 @@ window.addEventListener('scroll', ()=> {
 menu.addEventListener('click', ()=> {
     nav.classList.toggle('nav--open');
     logo.classList.toggle('logo--white');
+    menuLineTop.classList.toggle('menu__line--top--open');
+    menuLineBottom.classList.toggle('menu__line--bottom--open');
 
     if(nav.classList.contains('nav--open')) {
         for(let i = 0; i < menuLines.length; i++) {

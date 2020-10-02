@@ -108,8 +108,7 @@ h6 {
   font-size: 7.2rem;
   font-weight: 300;
   text-transform: capitalize;
-  line-height: 1.4;
-  text-shadow: 5px 5px #ededed; }
+  line-height: 1.4; }
   @media only screen and (min-width: 768px) {
     .hero--heading {
       font-size: 7.2rem; } }
@@ -294,7 +293,14 @@ h6 {
     .header .menu__line {
       height: .35rem;
       width: 100%;
-      background-color: #1b1b1b; }
+      background-color: #1b1b1b;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+      .header .menu__line--top--open {
+        transform: rotate(45deg) translateX(5px) translateY(5px);
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+      .header .menu__line--bottom--open {
+        transform: rotate(-45deg) translateX(4px) translateY(-5px);
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
       .header .menu__line:not(:last-child) {
         margin-bottom: 1rem; }
   .header .logo {

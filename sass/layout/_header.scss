@@ -23,6 +23,17 @@
             height: .35rem;
             width: 100%;
             background-color: $color-secondary;
+            transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+            &--top--open {
+                transform: rotate(45deg) translateX(5px) translateY(5px);
+                transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+
+            &--bottom--open {
+                transform: rotate(-45deg) translateX(4px) translateY(-5px);
+                transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1); 
+            }
 
             &:not(:last-child) {
                 margin-bottom: 1rem;
